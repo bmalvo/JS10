@@ -1,7 +1,22 @@
+:root {
+    --brightness: 100%;
+    --contrast: 100%;
+    --saturation: 100%;
+    --hue: 0deg;
+    --blur: 0px;
+}
+
 body {
     display: flex;
+    flex-wrap: wrap;
     font-family: Arial;
     font-size: 2rem;
+}
+
+.btn-scroller {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
 }
 
 .range-bars, .example-image {
@@ -13,4 +28,20 @@ body {
     display: block;
     width: 90%;
     margin: 20px auto;
+}
+
+.example-image {
+    filter:
+    brightness(var(--brightness))
+    contrast(var(--contrast))
+    saturate(var(--saturation))
+    hue-rotate(var(--hue))
+    blur(var(--blur))
+}
+
+.example-section {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 100vh;
 }
