@@ -5,7 +5,6 @@ const userId = document.querySelector('.user-id');
 const resultDiv = document.querySelector('.vote-results');
 
 
-
 const validUserID = new Map([
     ['Romuś', '12345678'],
     ['Stasio', '11111111'],
@@ -21,10 +20,27 @@ voteCounts.set('Opcja 3', 0);
 const votedUsers = new Set();
 
 const voting = (e) => {
-    e.preventDefoult();
-    console.log('głosowanie');
-    updateResult();
-}
+    e.preventDefault();
+    // console.log('głosowanie');
+    const user = userName.value;
+    const password = userId.value;
+    const select = voteOptions.value;
+
+    if (validUserID.get(user) === password) {
+        if (votedUsers.has(user)) {
+            alert(`${user} już głosował.`)
+        } else {
+            // logika ważnego głosu
+            votedUsers.add(user);
+            voteCounts.set(select, voteCounts.get(select) +1 );
+        }
+    } else {
+            alert("Nieprawidłowy login lub hasło.");
+        }
+        
+        updateResult();
+    }
+
 const updateResult = () => {
     output = ''
     for (const [option, count] of voteCounts) {
@@ -34,5 +50,3 @@ const updateResult = () => {
 }
 
 votingForm.addEventListener('submit', voting);
-
-// updateResult();
