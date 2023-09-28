@@ -10,12 +10,12 @@ class Book {
     }
 
     showDatails() {
-        console.log(`Tytuł: ${this.#title}, Autor: ${this.#author}, Data wydania: ${this.#pupblishYear}`)
+        return `Tytuł: ${this.#title}, Autor: ${this.#author}, Data wydania: ${this.#pupblishYear}`
     };
  }
 
 
-class Library { 
+class Library {
     #bookCollection;
 
     constructor() {
@@ -25,8 +25,9 @@ class Library {
 
     init() {
         document.getElementById('addBook').addEventListener('click', () => this.#addBook());
+        document.getElementById('searchBook').addEventListener('click', () => this.#searchBook());
 
-    } 
+    }
 
     #addBook() {
         const title = document.getElementById('title').value;
@@ -35,15 +36,20 @@ class Library {
 
         const book = new Book(title, author, publishYear);
         this.#bookCollection.set(title, book);
-
         alert('Książka została dodana do zbioru');
-        console.log(this.#bookCollection);
     }
 
-    #searchBook() Czas filmu -> 26:38
- }
+    #searchBook() {
+        const title = document.getElementById('searchTitle').value;
+        const book = this.#bookCollection.get(title);
+        const resultElemnt = document.getElementById('searchResult');
+
+        if (book) {
+            resultElemnt.textContent = book.showDatails();
+        } else {
+            resultElemnt.textContent = 'nie mamy tej książki';
+        };
+    }
+}
 
 const library = new Library();
-// const book = new Book('Między Bogiem a prawdą', 'Abramowica', '2023');
-// console.log(book);
-// book.showDatails();
