@@ -4,9 +4,10 @@ html {
     text-align: center;
 }
 
-div {
+div, ul {
     margin: 50px;
     text-align: left;
+    list-style: none;
 }
 
 #next {
