@@ -1,0 +1,23 @@
+html {
+    font-family: arial;
+    font-size: 30px;
+    text-align: center;
+}
+
+div {
+    margin: 50px;
+    text-align: left;
+}
+
+#next {
+    border-style: none;
+    background-color: #671515;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#next:hover {
+    background-color: #3d0404;
+}
