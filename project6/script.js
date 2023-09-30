@@ -1,3 +1,5 @@
+import { key } from './rapidKey';
+
 const getFace = async (e) => {
     e.preventDefault()
     const gender = document.getElementById('gender').value;
@@ -8,7 +10,7 @@ const getFace = async (e) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'a8d4d52867msh686f0720d16844dp135c14jsn3fdb3397eafb',
+            'X-RapidAPI-Key': key,
             'X-RapidAPI-Host': 'face-studio.p.rapidapi.com'
         }
     };
