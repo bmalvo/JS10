@@ -11,16 +11,16 @@ body {
     font-size: 30px;
     top: 20px;
     right: 30px;
+    color: #2e1bff;
 }
 
 .game-board {
-    width: 90%;
+    width: 95%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     margin: auto;
-    border: 1px solid black;
 }
 
 .card {
@@ -29,6 +29,160 @@ body {
     background-image: linear-gradient(#b5d43c, #ecff9f);
     cursor: grab;
     background-size: contain;
+}
+
+@media (max-width: 1300px) {
+    .card {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 1211px) {
+    .card {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 1062px) {
+    .card {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 910px) {
+    .card {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 804px) {
+    .card {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 771px) {
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 680px) {
+    .card {
+        width: 88px;
+        height: 88px;
+    }
+}
+
+@media (max-width: 651px) {
+    .card {
+        width: 84px;
+        height: 84px;
+    }
+}
+
+@media (max-width: 557px) {
+    .card {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 532px) {
+    .card {
+        width: 78px;
+        height: 78px;
+    }
+}
+
+@media (max-width: 519px) {
+    .card {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+@media (max-width: 506px) {
+    .card {
+        width: 74px;
+        height: 74px;
+    }
+}
+
+@media (max-width: 494px) {
+    .card {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+@media (max-width: 481px) {
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 469px) {
+    .card {
+        width: 67px;
+        height: 67px;
+    }
+}
+
+@media (max-width: 449px) {
+    .card {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 437px) {
+    .card {
+        width: 63px;
+        height: 63px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 61px;
+        height: 61px;
+    }
+}
+
+@media (max-width: 412px) {
+    .card {
+        width: 59px;
+        height: 59px;
+    }
+}
+
+@media (max-width: 399px) {
+    .card {
+        width: 57px;
+        height: 57px;
+    }
+}
+
+@media (max-width: 386px) {
+    .card {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 374px) {
+    .card {
+        width: 53px;
+        height: 53px;
+    }
 }
 
 .revealed, .matched {
