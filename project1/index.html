@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt1- zmiana fonta</title>
+    <title>Font Changer</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Josefin+Sans&family=Oswald&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="range" class="rangeInput" min="1" max="50" value="26">
-    <select class="fontSelector">
-        <option value="Arial">Arial</option>
-        <option value="Times New Roman">Times New Roman</option>
-        <option value="Roboto">Roboto</option>
-    </select>
-    <p class="sampleText">lorem ipsum</p>
+    <h1>Font Changer</h1>
+
+    <div>
+        <input type="range" class="rangeInput" min="1" max="50" value="26">
+        <select class="fontSelector">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Agbalumo">Agbalumo</option>
+            <option value="Playfair Display">PlayfairDisplay</option>
+            <option value="Oswald">Oswald</option>
+            <option value="Josefin Sans">Josefin Sans</option>
+            <option value="Dancing Script">Dancing Script</option>
+        </select>
+        <p class="sampleText">lorem ipsum</p>
+    </div>
 
 </body>
 </html>

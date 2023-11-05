@@ -6,8 +6,8 @@ a {
     text-decoration: none!important;
 }
 
-a:hover {
-    transform: scale(1.1);
+span:hover {
+    color: blue;
 }
 
 .container-fluid {
